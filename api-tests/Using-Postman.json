@@ -1,0 +1,39 @@
+{
+  "info": {
+    "name": "Practice API Tests",
+    "_postman_id": "12345-67890-abcd-efgh",
+    "description": "Postman collection for Practice Software Testing public APIs",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login User",
+      "request": {
+        "method": "POST",
+        "header": [{ "key": "Content-Type", "value": "application/json" }],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"customer@practicesoftwaretesting.com\",\n  \"password\": \"welcome01\"\n}"
+        },
+        "url": {
+          "raw": "https://api.practicesoftwaretesting.com/users/login",
+          "protocol": "https",
+          "host": ["api", "practicesoftwaretesting", "com"],
+          "path": ["users", "login"]
+        }
+      }
+    },
+    {
+      "name": "Get Products",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "https://api.practicesoftwaretesting.com/products",
+          "protocol": "https",
+          "host": ["api", "practicesoftwaretesting", "com"],
+          "path": ["products"]
+        }
+      }
+    }
+  ]
+}

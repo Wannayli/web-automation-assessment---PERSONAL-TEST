@@ -1,0 +1,13 @@
+{
+  "name": "automation-assessment",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "playwright test",
+    "report": "playwright show-report",
+    "api-test": "newman run api-tests/PracticeAPITests.postman_collection.json -r cli,html"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.45.0",
+    "newman": "^6.1.2"
+  }
+}
