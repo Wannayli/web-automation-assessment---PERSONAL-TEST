@@ -1,6 +1,7 @@
 # web-automation-assessment Finexus
 Framework: Playwright + TypeScript  
 Scenario automated: Login to Practice Software Testing and verify user name.
+THIS IS FOR MY OWN CHECKING
 
 ### Run tests
 ```bash
